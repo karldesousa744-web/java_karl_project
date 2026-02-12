@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script>
+      function table(){
+        var n = parseInt(document.getElementById("numb").value);
+        for(var i=0;i<11;i++){
+          document.getElementById("output").innerHTML+=n+" x "+i+" = "+eval(n*i)+" <br>";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    numb<input type="text" id="numb"><br>
+    <input type="button"value="check" onclick="table();">
+    <h1 id="output">output</h1> 
+  </body>
+</html>
